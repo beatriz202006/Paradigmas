@@ -12,7 +12,7 @@ tuplaParImpar n
 
 --3) Funcao recursiva que recebe lista de inteiros e retorna (sosma dos positivos, produto dos negativos)
 posNeg :: [Int] -> (Int, Int)
-posNeg [] = (0, 0)
+posNeg [] = (0, 1)
 posNeg (head:tail)
     | head > 0 = (head + somaPos, prodNeg) -- se x eh positivo
     | head < 0 = (somaPos, head * prodNeg)    -- se x eh negativo
